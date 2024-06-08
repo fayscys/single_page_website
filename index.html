@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single page website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>muheebah's website</h1>
+      <p>hello there!</p>
+    </header>
+
+    <div class="main-content">
+      <section id="CV">
+        <p>
+          <h1><b>PROFILE</b><h1>
+          <h5>A backend web developer with experience in python programming language, Django web framework, html, css, version control. I have developed an inventory management system, Possesses problem-solving skills, excellent communication skills, organisational and collaboration skills. Excited at the prospect of bringing my strong work ethic, skills and drive to your organisation.</h5>
+          <h1>EDUCATION</h1>
+          <h5>Electronics and Computer Engineering - Lagos State University, Epe, Lagos	July 2021 - current</h5>
+          <h1>WORK EXPERIENCE</h1>
+          <h5>
+            Web developer in school project: I solely built a web inventory system for my department in school as a school project.
+            Public relations member: I was an active public relation member tasked with organization of events to host the student population in my campus for an entire session 2022/2023
+          </h5>
+          <h1>SKILLS</h1>
+          <h5>Soft and Hard Skills: Problem-Solving, Learning Agility, Team Collaboration
+          Software Skills: programming
+          </h5>
+          <h1>INTERESTS AND LANGUAGES</h1>
+          <h5>Interests: languages, programming
+            Languages: English (Native Speaker), Yoruba (Native Speaker), Arabic (read & write)
+            Hobbies: learning languages
+          </h5>
+          <h1>REFERENCES<h5>Available upon request</h5></h1>
+        </p>
+      </section>
+      <section id="gallery">
+        <h2>photos</h2>
+        <div class="gallery-container">
+          <img src="muheebah.jpg" alt="muheebah's picture" />
+          <img src="family-picture.jpg" alt="family picture" />
+          <img src="profile-pic.jpg " alt="profile picture" />
+          <img src="" alt="" />
+          <img src="" alt="" />
+        </div>
+      </section>
+
+    </div>
+    <footer>
+      <p>
+        contact me at:
+        <a href="mailto:onikoyitinuade0526@gmail.com"
+          >onikoyitinuade0526@gmail.com</a>
+        <a href="https://www.linkedin.com/in/akinlade-muheebah-anike">//www.linkedin.com/in/akinlade-muheebah-anike</a>
+      </p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const images = document.querySelectorAll(".gallery-container img");
+        images.forEach((image) => {
+          image.addEventListener("click", () => {
+            alert("image clicked");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
